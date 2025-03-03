@@ -16,7 +16,7 @@ const HomePage: NextPage = () => {
         <p className="mt-4 font-bold italic sm:text-xl">The Beauty Tech</p>
       </div>
       <p className="tracking-wide uppercase">Located in Soweto</p>
-      <div className="flex flex-col-reverse items-center gap-x-10 gap-y-4 text-start sm:flex-row">
+      <div className="flex flex-col-reverse items-center gap-x-10 gap-y-6 text-start sm:flex-row">
         <div className="flex-1 text-center sm:mt-0 sm:text-start">
           <h1 className="font-serif text-3xl font-extrabold tracking-widest sm:text-6xl">
             Meet Your Beauty Tech

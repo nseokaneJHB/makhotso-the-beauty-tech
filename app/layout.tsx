@@ -45,7 +45,7 @@ export default function RootLayout({
       >
         <ThemeWrapper>
           <Navigation />
-          <main className="grow px-4 pt-36 sm:px-8">{children}</main>
+          <main className="grow px-4 pt-36 pb-16 sm:px-8">{children}</main>
           <Footer />
         </ThemeWrapper>
       </body>
