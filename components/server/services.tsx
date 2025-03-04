@@ -43,7 +43,7 @@ export const Services = () => {
             key={name.toLowerCase()}
             className="bg-foreground/10 flex w-full flex-col gap-y-6 rounded-lg p-4 text-center shadow-md"
           >
-            <div className="relative mx-auto h-80 w-96 overflow-hidden rounded-lg">
+            <div className="relative mx-auto h-80 w-full overflow-hidden rounded-lg">
               <Image
                 fill
                 alt={name}
