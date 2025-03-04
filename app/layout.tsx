@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+
+import { Analytics } from "@vercel/analytics/react"
+
 import "./globals.css"
 
 import { ThemeWrapper } from "@/wrappers/ThemeWrapper"
@@ -47,6 +50,7 @@ export default function RootLayout({
           <Navigation />
           <main className="grow px-4 pt-36 pb-16 sm:px-8">{children}</main>
           <Footer />
+          <Analytics />
         </ThemeWrapper>
       </body>
     </html>

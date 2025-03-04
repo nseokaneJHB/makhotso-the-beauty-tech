@@ -8,7 +8,7 @@ export const Navigation = () => {
         <Link
           href="/"
           title="Home"
-          className="font-serif text-2xl font-extrabold tracking-widest text-pink-500"
+          className="font-serif text-2xl font-extrabold tracking-widest text-pink-400"
         >
           MK
         </Link>
