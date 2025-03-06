@@ -1,29 +1,40 @@
 import { NextPage } from "next"
+import Image from "next/image"
+
+import logoImage from "@/public/transparent-logo.png"
 
 import { Intro } from "@/components/server/intro"
-import { AppointmentDetails } from "@/components/server/appointment-details"
 import { Services } from "@/components/server/services"
+import { AppointmentDetails } from "@/components/server/appointment-details"
+import { SectionContainer } from "@/components/server/section-container"
 
 const HomePage: NextPage = () => {
   return (
-    <section className="mx-auto flex w-full max-w-7xl flex-col gap-y-8 text-center xl:px-8">
-      <p className="text-muted-foreground tracking-wider italic">
-        😘 Welcome to my booking site 😘
-      </p>
-      <div>
-        <h1 className="font-serif text-3xl font-extrabold tracking-widest text-pink-400 uppercase underline decoration-pink-500/50 decoration-2 underline-offset-8 sm:text-6xl">
-          MAKHOTSO
-        </h1>
-        <p className="mt-4 font-bold italic sm:text-xl">The Beauty Tech</p>
+    <>
+      <SectionContainer>
+        <p className="text-muted-foreground tracking-wider italic">
+          😘 Welcome to my booking site 😘
+        </p>
+      </SectionContainer>
+      <div className="bg-secondary-foreground dark:bg-foreground/10 my-8">
+        <div className="relative mx-auto h-40 w-full max-w-80 overflow-hidden sm:h-36 md:h-40 lg:h-56">
+          <Image
+            fill
+            priority
+            sizes="16rem"
+            src={logoImage}
+            alt="The Artist Makhotso"
+            className="object-cover object-center"
+          />
+        </div>
       </div>
-      <p className="tracking-wide uppercase">Located in Soweto</p>
-
-      <Intro />
-
-      <AppointmentDetails />
-
-      <Services />
-    </section>
+      <SectionContainer>
+        <p className="tracking-wide uppercase">Located in Soweto</p>
+        <Intro />
+        <AppointmentDetails />
+        <Services />
+      </SectionContainer>
+    </>
   )
 }
 
