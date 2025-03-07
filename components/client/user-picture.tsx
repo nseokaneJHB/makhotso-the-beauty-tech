@@ -29,7 +29,7 @@ export const UserPicture = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative flex items-center">
       <Button
         variant="ghost"
         onClick={() => setIsOpen(prev => !prev)}
@@ -55,10 +55,9 @@ export const UserPicture = () => {
       <Button
         onClick={logout}
         className={cn(
-          "absolute right-5 h-0 translate-y-[40px] scale-0 transform cursor-pointer bg-pink-400 font-extrabold text-white opacity-0 shadow-none transition-all delay-200 duration-300 ease-linear hover:bg-pink-500",
+          "absolute right-0 w-fit translate-y-[30px] scale-0 transform cursor-pointer self-end bg-pink-400 px-8 py-6 font-extrabold text-white opacity-0 transition-all delay-200 duration-300 ease-linear hover:bg-pink-500",
           {
-            "right-0 z-30 w-fit translate-y-[50px] scale-100 px-8 py-6 opacity-100":
-              isOpen
+            "z-30 translate-y-[45px] scale-100 opacity-100": isOpen
           }
         )}
       >

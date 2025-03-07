@@ -21,8 +21,8 @@ export const Intro = () => {
           </p>
         </div>
       </div>
-      <div className="flex h-80 w-2/3 justify-center rounded-full border bg-pink-400 sm:rounded-b-none md:h-[350px] md:w-1/2 md:p-6">
-        <div className="relative h-full w-full overflow-hidden rounded-full sm:h-80 sm:w-80">
+      <div className="flex w-full max-w-96 transform items-center justify-center rounded-full transition-all duration-300 ease-linear sm:h-[330px] sm:items-start sm:rounded-b-none sm:bg-pink-400 sm:pt-6">
+        <div className="relative h-80 w-full max-w-80 overflow-hidden rounded-full border-2 border-pink-400">
           <Image
             fill
             priority

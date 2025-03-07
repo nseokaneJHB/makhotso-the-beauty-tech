@@ -14,7 +14,7 @@ export const Navigation = async () => {
         >
           MK
         </Link>
-        <div className="flex items-center gap-x-4">
+        <div className="flex h-[40px] items-center gap-x-4">
           <ToggleTheme />
           <UserPicture />
         </div>
